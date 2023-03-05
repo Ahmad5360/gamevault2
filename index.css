@@ -589,6 +589,19 @@ input {
     transform: translate3d(0, 0, 0);
 }
 
+
+.container {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+@media (min-width: 280px) {
+    .game-library .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
 /* Small devices (phones, 576px and up) */
 @media (min-width: 576px) {
     .title h1 {
@@ -617,6 +630,12 @@ input {
     .console-container span,
     .console-underscore {
         font-size: 1.5rem;
+    }
+
+    .game-library .col-md-4 {
+        flex: 0 0 30%;
+        max-width: 50%;
+
     }
 }
 
